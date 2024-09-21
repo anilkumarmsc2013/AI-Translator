@@ -1,0 +1,119 @@
+##Resume Suggestion Application
+
+The necessity of this application ‘GeoSpeak’ arises from the limitations of traditional translation methods and the growing complexity of language usage in various domains. Using OpenAI's Large Language Models (LLMs) and Generative AI (Gen AI), the application can dynamically interpret and translate text considering context, idioms, and subtle nuances. This is particularly important for applications in diplomacy, global business, education, healthcare, and customer service where precise communication can significantly impact outcomes. This application aims to bridge language barriers, enhance cross
+
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Setting Up a Virtual Environment](#setting-up-a-virtual-environment)
+  - [Using `virtualenv`](#using-virtualenv)
+  - [Using `venv`](#using-venv)
+- [Installing Dependencies](#installing-dependencies)
+- [Running the Application](#running-the-application)
+- [Adding Paths for Poppler and Tesseract in Python](#adding-paths-for-poppler-and-tesseract-in-python)
+- [Troubleshooting](#troubleshooting)
+
+## Prerequisites
+Before running the application, you need to install the following dependencies on your system:
+
+1. **Python 3.12.3**: Ensure that Python is installed and accessible from the command line.
+2. **pip**: Ensure that pip is installed for managing Python packages.
+
+## Installation
+
+### Python version 3.12.3
+
+To create a virtual environment and install requirements in Python 3.12.3 on different operating systems, follow the instructions below:
+
+### Installing requirements
+
+`pip install -r requirements.txt`
+
+### Installing googletrans
+
+`pip install googletrans==4.0.0-rc1`
+
+### Installing google_gemini
+
+`pip install google-gemini`
+
+### Installing langdetect
+
+`pip install langdetect`
+
+### Installing chardet
+
+`pip install chardet`
+
+### Installing Streamlit
+
+`pip install streamlit`
+
+### For Windows:
+
+Open the Command Prompt by pressing Win + R, typing "cmd", and pressing Enter.
+
+Change the directory to the desired location for your project:
+
+`cd C:\path\to\project`
+
+Create a new virtual environment using the venv module:
+
+`python -m venv myenv`
+
+Activate the virtual environment:
+
+`myenv\Scripts\activate`
+
+Install the project requirements using pip:
+
+`pip install -r requirements.txt`
+
+### Execution Instructions if Multiple Python Versions Installed
+
+If you have multiple Python versions installed on your system, you can use the Python Launcher to create a virtual environment with Python 3.12.3. Specify the version using the -p or --python flag. Follow the instructions below:
+
+### For Windows:
+Open the Command Prompt by pressing Win + R, typing "cmd", and pressing Enter.
+
+Change the directory to the desired location for your project:
+
+`cd C:\path\to\project`
+
+Create a new virtual environment using the Python Launcher:
+
+`py -3.12 -m venv myenv`
+
+Note: Replace myenv with your desired virtual environment name.
+
+Activate the virtual environment:
+
+`myenv\Scripts\activate`
+
+Install the project requirements using pip:
+
+`pip install -r requirements.txt`
+
+
+### Installing streamlit
+To run the streamlit app
+
+Add Gemini API Key in Constants
+
+`python -m streamlit run src/main.py`
+
+This will start a local web server and open the application in your default web browser.
+
+
+## Note:
+if you get the error "AttributeError: 'NoneType' object has no attribute 'group'
+
+`pip install httpcore httpx googletrans==4.0.0-rc1`
+
+```
+├─ readme.doc
+├─ requirements.txt
+└─ src
+   ├─ main.py
+   └─ google_gemini.py
