@@ -1,7 +1,3 @@
-##Resume Suggestion Application
-
-The necessity of this application ‘GeoSpeak’ arises from the limitations of traditional translation methods and the growing complexity of language usage in various domains. Using OpenAI's Large Language Models (LLMs) and Generative AI (Gen AI), the application can dynamically interpret and translate text considering context, idioms, and subtle nuances. This is particularly important for applications in diplomacy, global business, education, healthcare, and customer service where precise communication can significantly impact outcomes. This application aims to bridge language barriers, enhance cross
-
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
